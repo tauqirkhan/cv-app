@@ -1,4 +1,4 @@
-import { InputText } from "./utils";
+import { InputText, FromToDateInputs } from "./utils";
 
 export default function Section2({
   schoolName,
@@ -19,45 +19,37 @@ export default function Section2({
       <h1>Education qualification</h1>
       <div>
         <h2>School</h2>
-        <InputText
-          labelText={"Name"}
-          text={schoolName}
-          handler={handleSchoolName}
-          placeHolder={"School Name"}
-        />
-        <InputText
-          labelText={"From"}
-          text={schoolStartDate}
-          handler={handleSchoolStartDate}
-          type={"date"}
-        />
-        <InputText
-          labelText={"To"}
-          text={schoolEndDate}
-          handler={handleSchoolEndDate}
-          type={"date"}
-        />
+        <div className="schoolInputs">
+          <InputText
+            labelText={"Name"}
+            text={schoolName}
+            handler={handleSchoolName}
+            placeHolder={"School Name"}
+          />
+          <FromToDateInputs
+            startDate={schoolStartDate}
+            handleStartDate={handleSchoolStartDate}
+            endDate={schoolEndDate}
+            handleEndDate={handleSchoolEndDate}
+          />
+        </div>
       </div>
       <div>
         <h2>College</h2>
-        <InputText
-          labelText={"Name"}
-          text={collegeName}
-          handler={handleCollegeName}
-          placeHolder={"College Name"}
-        />
-        <InputText
-          labelText={"From"}
-          text={collegeStartDate}
-          handler={handleCollegeStartDate}
-          type={"date"}
-        />
-        <InputText
-          labelText={"To"}
-          text={collegeEndDate}
-          handler={handleCollegeEndDate}
-          type={"date"}
-        />
+        <div className="collegeInputs">
+          <InputText
+            labelText={"Name"}
+            text={collegeName}
+            handler={handleCollegeName}
+            placeHolder={"College Name"}
+          />
+          <FromToDateInputs
+            startDate={collegeStartDate}
+            handleStartDate={handleCollegeStartDate}
+            endDate={collegeEndDate}
+            handleEndDate={handleCollegeEndDate}
+          />
+        </div>
       </div>
     </section>
   );

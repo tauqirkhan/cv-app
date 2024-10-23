@@ -11,19 +11,28 @@ export default function Section1({
   return (
     <section className="section1">
       <h1>General Information</h1>
-      <InputText labelText={"Name"} text={name} handler={handleFullName} />
-      <InputText
-        type={"email"}
-        labelText={"Email"}
-        text={email}
-        handler={handleEmail}
-      />
-      <InputText
-        type={"tel"}
-        labelText={"Contact"}
-        text={contact}
-        handler={handleContactNo}
-      />
+      <div className="generalInputs">
+        <InputText
+          labelText={"Name"}
+          text={name}
+          handler={handleFullName}
+          placeHolder={"Your name"}
+        />
+        <InputText
+          type={"email"}
+          labelText={"Email"}
+          text={email}
+          handler={handleEmail}
+          placeHolder={"Email address"}
+        />
+        <InputText
+          type={"tel"}
+          labelText={"Contact"}
+          text={contact}
+          handler={handleContactNo}
+          placeHolder={"Contact Number"}
+        />
+      </div>
     </section>
   );
 }

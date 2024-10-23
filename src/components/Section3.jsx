@@ -1,4 +1,4 @@
-import { InputText, TextArea } from "./utils";
+import { InputText, TextArea, FromToDateInputs } from "./utils";
 
 export default function Section3({
   companyName,
@@ -15,35 +15,31 @@ export default function Section3({
   return (
     <section className="section3">
       <h1>Practical Experience</h1>
-      <InputText
-        labelText={"Company Name"}
-        text={companyName}
-        handler={handleCompanyName}
-        placeHolder={"Company Name"}
-      />
-      <InputText
-        labelText={"Title"}
-        text={companyTitle}
-        handler={handleCompanyTitle}
-        placeHolder={"Title Name"}
-      />
-      <TextArea
-        labelText={"Description"}
-        text={companyDescription}
-        handler={handleCompanyDescription}
-      />
-      <InputText
-        labelText={"From"}
-        text={companyStartDate}
-        handler={handleCompanyStartDate}
-        type={"date"}
-      />
-      <InputText
-        labelText={"To"}
-        text={companyEndDate}
-        handler={handleCompanyEndDate}
-        type={"date"}
-      />
+      <div className="experienceInputs">
+        <InputText
+          labelText={"Company Name"}
+          text={companyName}
+          handler={handleCompanyName}
+          placeHolder={"Company Name"}
+        />
+        <InputText
+          labelText={"Title"}
+          text={companyTitle}
+          handler={handleCompanyTitle}
+          placeHolder={"Title Name"}
+        />
+        <TextArea
+          labelText={"Description"}
+          text={companyDescription}
+          handler={handleCompanyDescription}
+        />
+        <FromToDateInputs
+          startDate={companyStartDate}
+          handleStartDate={handleCompanyStartDate}
+          endDate={companyEndDate}
+          handleEndDate={handleCompanyEndDate}
+        />
+      </div>
     </section>
   );
 }

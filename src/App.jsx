@@ -3,6 +3,8 @@ import "./App.css";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
+import GeneralInfo from "./components/GeneralInfo";
+import Education from "./components/Education";
 
 function App() {
   const [fullName, setFullName] = useState("");
@@ -41,42 +43,49 @@ function App() {
   const handleCompanyEndDate = handle(setCompanyEndDate);
 
   return (
-    <main>
-      <Section1
-        name={fullName}
-        email={email}
-        contact={contactNo}
-        handleFullName={handleFullName}
-        handleEmail={handleEmail}
-        handleContactNo={handleContactNo}
-      />
-      <Section2
-        schoolName={schoolName}
-        handleSchoolName={handleSchoolName}
-        schoolStartDate={schoolStartDate}
-        handleSchoolStartDate={handleSchoolStartDate}
-        schoolEndDate={schoolEndDate}
-        handleSchoolEndDate={handleSchoolEndDate}
-        collegeName={collegeName}
-        handleCollegeName={handleCollegeName}
-        collegeStartDate={collegeStartDate}
-        handleCollegeStartDate={handleCollegeStartDate}
-        collegeEndDate={collegeEndDate}
-        handleCollegeEndDate={handleCollegeEndDate}
-      />
-      <Section3
-        companyName={companyName}
-        handleCompanyName={handleCompanyName}
-        companyTitle={companyTitle}
-        handleCompanyTitle={handleCompanyTitle}
-        companyDescription={companyDescription}
-        handleCompanyDescription={handleCompanyDescription}
-        companyStartDate={companyStartDate}
-        handleCompanyStartDate={handleCompanyStartDate}
-        companyEndDate={companyEndDate}
-        handleCompanyEndDate={handleCompanyEndDate}
-      />
-    </main>
+    <>
+      <main className="leftSide">
+        <Section1
+          name={fullName}
+          email={email}
+          contact={contactNo}
+          handleFullName={handleFullName}
+          handleEmail={handleEmail}
+          handleContactNo={handleContactNo}
+        />
+        <Section2
+          schoolName={schoolName}
+          handleSchoolName={handleSchoolName}
+          schoolStartDate={schoolStartDate}
+          handleSchoolStartDate={handleSchoolStartDate}
+          schoolEndDate={schoolEndDate}
+          handleSchoolEndDate={handleSchoolEndDate}
+          collegeName={collegeName}
+          handleCollegeName={handleCollegeName}
+          collegeStartDate={collegeStartDate}
+          handleCollegeStartDate={handleCollegeStartDate}
+          collegeEndDate={collegeEndDate}
+          handleCollegeEndDate={handleCollegeEndDate}
+        />
+        <Section3
+          companyName={companyName}
+          handleCompanyName={handleCompanyName}
+          companyTitle={companyTitle}
+          handleCompanyTitle={handleCompanyTitle}
+          companyDescription={companyDescription}
+          handleCompanyDescription={handleCompanyDescription}
+          companyStartDate={companyStartDate}
+          handleCompanyStartDate={handleCompanyStartDate}
+          companyEndDate={companyEndDate}
+          handleCompanyEndDate={handleCompanyEndDate}
+        />
+      </main>
+      <main className="rightSide">
+        <GeneralInfo />
+        <Education />
+        <Experience />
+      </main>
+    </>
   );
 }
 
