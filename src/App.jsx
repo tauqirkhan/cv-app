@@ -5,6 +5,7 @@ import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
 import GeneralInfo from "./components/GeneralInfo";
 import Education from "./components/Education";
+import Experience from "./components/Experience";
 
 function App() {
   const [fullName, setFullName] = useState("");
@@ -81,9 +82,27 @@ function App() {
         />
       </main>
       <main className="rightSide">
-        <GeneralInfo />
-        <Education />
-        <Experience />
+        <GeneralInfo
+          fullName={fullName}
+          companyTitle={companyTitle}
+          contactNo={contactNo}
+          email={email}
+        />
+        <Education
+          schoolName={schoolName}
+          schoolStartDate={schoolStartDate}
+          schoolEndDate={schoolEndDate}
+          collegeName={collegeName}
+          collegeStartDate={collegeStartDate}
+          collegeEndDate={collegeEndDate}
+        />
+        <Experience
+          companyName={companyName}
+          companyStartDate={companyStartDate}
+          companyEndDate={companyEndDate}
+          companyTitle={companyTitle}
+          companyDescription={companyDescription}
+        />
       </main>
     </>
   );
