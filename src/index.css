@@ -93,9 +93,19 @@ body {
   font-size: 21px;
 }
 
+#root {
+  display: flex;
+  justify-content: space-around;
+}
+
+#root > * {
+  border: 1px solid red;
+}
+
+/* .leftSide */
+
 .leftSide {
   max-width: 33vw;
-  border: 1px solid red;
 }
 
 .leftSide > * {
@@ -172,4 +182,61 @@ input[type="date"] {
 
 .section2 > :nth-child(3) {
   margin-top: 25px;
+}
+
+.rightSide {
+  width: 70.92vh;
+  height: 100vh;
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+}
+
+.rightSide > * {
+  border: 1px solid blue;
+}
+
+.rightSide > * {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.GeneralInfo img {
+  position: absolute;
+  right: 0%;
+  margin-right: 50px;
+  border-radius: 50%;
+}
+
+.GeneralInfo {
+  position: relative;
+  padding-top: 50px;
+  min-height: 28vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.phoneNo,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.GeneralInfo h1 {
+  font-size: 2.48em;
+}
+
+.GeneralInfo h2 {
+  padding-top: 10px;
+  padding-left: 30px;
+  font-size: 1.33em;
+}
+
+.reach {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
