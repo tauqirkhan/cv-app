@@ -8,22 +8,24 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 
 function App() {
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [contactNo, setContactNo] = useState("");
+  const [fullName, setFullName] = useState("Unknown Name");
+  const [email, setEmail] = useState("unknown@name.com");
+  const [contactNo, setContactNo] = useState("555-555-5555");
 
-  const [schoolName, setSchoolName] = useState("");
-  const [schoolStartDate, setSchoolStartDate] = useState("");
-  const [schoolEndDate, setSchoolEndDate] = useState("");
-  const [collegeName, setCollegeName] = useState("");
-  const [collegeStartDate, setCollegeStartDate] = useState("");
-  const [collegeEndDate, setCollegeEndDate] = useState("");
+  const [schoolName, setSchoolName] = useState("Unknown School");
+  const [schoolStartDate, setSchoolStartDate] = useState("0000-00-00");
+  const [schoolEndDate, setSchoolEndDate] = useState("0000-00-00");
+  const [collegeName, setCollegeName] = useState("Unknown College");
+  const [collegeStartDate, setCollegeStartDate] = useState("0000-00-00");
+  const [collegeEndDate, setCollegeEndDate] = useState("0000-00-00");
 
-  const [companyName, setCompanyName] = useState("");
-  const [companyTitle, setCompanyTitle] = useState("");
-  const [companyDescription, setCompanyDescription] = useState("");
-  const [companyStartDate, setCompanyStartDate] = useState("");
-  const [companyEndDate, setCompanyEndDate] = useState("");
+  const [companyName, setCompanyName] = useState("Unknown name");
+  const [companyTitle, setCompanyTitle] = useState("Unknown title");
+  const [companyDescription, setCompanyDescription] = useState(
+    "Provide description"
+  );
+  const [companyStartDate, setCompanyStartDate] = useState("0000-00-00");
+  const [companyEndDate, setCompanyEndDate] = useState("0000-00-00");
 
   const handleFullName = handle(setFullName);
   const handleEmail = handle(setEmail);
