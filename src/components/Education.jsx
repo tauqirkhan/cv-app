@@ -8,8 +8,8 @@ const Education = ({
 }) => {
   return (
     <section className="Education">
+      <h1>Education Qualification</h1>
       <div className="school">
-        <h1>Education Qualification</h1>
         <h2>{schoolName}</h2>
         <div className="schoolYears">
           <p>
@@ -18,7 +18,6 @@ const Education = ({
         </div>
       </div>
       <div className="college">
-        <h1>College Qualification</h1>
         <h2>{collegeName}</h2>
         <div className="collegeYears">
           <p>

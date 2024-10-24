@@ -212,7 +212,7 @@ input[type="date"] {
 .GeneralInfo {
   position: relative;
   padding-top: 50px;
-  min-height: 28vh;
+  min-height: 270px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -239,4 +239,23 @@ input[type="date"] {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+/* Education */
+
+.Education {
+  padding-top: 20px;
+}
+
+.Education h1 {
+  margin-bottom: 20px;
+}
+
+.Education > div {
+  padding-left: 25px;
+  margin-bottom: 25px;
+}
+
+.Education > div > div {
+  transform: translateX(20%);
 }
