@@ -11,7 +11,7 @@ const Education = ({
       <h1>Education Qualification</h1>
       <div className="school">
         <h2>{schoolName}</h2>
-        <div className="schoolYears">
+        <div className="years">
           <p>
             {schoolStartDate} &mdash; {schoolEndDate}
           </p>
@@ -19,7 +19,7 @@ const Education = ({
       </div>
       <div className="college">
         <h2>{collegeName}</h2>
-        <div className="collegeYears">
+        <div className="years">
           <p>
             {collegeStartDate} &mdash; {collegeEndDate}
           </p>
