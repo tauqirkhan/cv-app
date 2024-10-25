@@ -1,11 +1,40 @@
+import { useState } from "react";
+
 const GeneralInfo = ({ fullName, companyTitle, contactNo, email }) => {
+  const [image, setImage] = useState("/portrait.jpg"); // Default image
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImage(reader.result); // Update the state with the new image
+      };
+      reader.readAsDataURL(file); // Convert the file to a data URL
+    }
+  };
+
   return (
     <section className="GeneralInfo">
-      <img
-        src="/portrait.jpg"
-        alt={fullName}
-        style={{ width: "250px", height: "250px", objectFit: "cover" }}
+      <input
+        type="file"
+        accept="image/*"
+        onChange={handleImageUpload}
+        style={{ display: "none" }} // Hide the file input
+        id="imageUpload" // ID for the label to trigger
       />
+      <label htmlFor="imageUpload">
+        <img
+          src={image}
+          alt={fullName}
+          style={{
+            width: "250px",
+            height: "250px",
+            objectFit: "cover",
+            cursor: "pointer",
+          }}
+        />
+      </label>
       <div>
         <h1>{fullName}</h1>
         <h2>{companyTitle}</h2>

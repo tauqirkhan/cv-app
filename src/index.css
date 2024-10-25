@@ -98,6 +98,12 @@ body {
   justify-content: space-around;
 }
 
+input,
+textarea {
+  font-size: 0.86em;
+  padding: 5px;
+}
+
 /* .leftSide */
 
 .leftSide {
@@ -146,7 +152,6 @@ h2 {
   margin: auto;
   gap: 10px;
   max-width: 540px;
-  margin-top: 30px;
 }
 
 .dateInputs {
