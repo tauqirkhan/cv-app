@@ -1,3 +1,5 @@
+import "../styles/experience.css";
+
 const Experience = ({
   companyName,
   companyStartDate,

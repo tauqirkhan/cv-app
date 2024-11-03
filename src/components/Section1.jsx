@@ -1,4 +1,5 @@
 import { InputText } from "./utils";
+import "../styles/section1.css";
 
 export default function Section1({
   name,

@@ -1,3 +1,5 @@
+import "../styles/education.css";
+
 const Education = ({
   schoolName,
   schoolStartDate,

@@ -1,4 +1,5 @@
 import { InputText, TextArea, FromToDateInputs } from "./utils";
+import "../styles/section3.css";
 
 export default function Section3({
   companyName,

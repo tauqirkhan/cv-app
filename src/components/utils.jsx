@@ -1,3 +1,5 @@
+import "../styles/utils.css";
+
 export const InputText = ({
   labelText,
   text,

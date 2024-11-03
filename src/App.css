@@ -1,0 +1,47 @@
+#root {
+  display: flex;
+  justify-content: space-around;
+}
+
+input,
+textarea {
+  font-size: 0.86em;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 1.52em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.143em;
+  font-weight: 800;
+}
+
+.leftSide {
+  max-width: 33vw;
+}
+
+.leftSide > * {
+  border-top: 1px solid blue;
+  padding: 10px;
+}
+
+.leftSide > :nth-child(1) {
+  border-top: none;
+}
+
+.rightSide {
+  width: 70.92vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  gap: 50px;
+}
+
+.rightSide > * {
+  padding-right: 50px;
+  padding-left: 50px;
+}

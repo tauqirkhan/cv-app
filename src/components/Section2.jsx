@@ -1,4 +1,5 @@
 import { InputText, FromToDateInputs } from "./utils";
+import "../styles/section2.css";
 
 export default function Section2({
   schoolName,

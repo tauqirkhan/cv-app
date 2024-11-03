@@ -1,0 +1,39 @@
+.GeneralInfo img {
+  position: absolute;
+  right: 0%;
+  margin-right: 30px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+.GeneralInfo {
+  position: relative;
+  padding-top: 50px;
+  min-height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.phoneNo,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.GeneralInfo h1 {
+  font-size: 2.48em;
+}
+
+.GeneralInfo h2 {
+  padding-top: 10px;
+  padding-left: 30px;
+  font-size: 1.33em;
+}
+
+.reach {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

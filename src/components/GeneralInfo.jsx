@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/generalInfo.css";
 
 const GeneralInfo = ({ fullName, companyTitle, contactNo, email }) => {
   const [image, setImage] = useState("/portrait.jpg"); // Default image
