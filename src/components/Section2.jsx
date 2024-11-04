@@ -32,6 +32,7 @@ export default function Section2({
             handleStartDate={handleSchoolStartDate}
             endDate={schoolEndDate}
             handleEndDate={handleSchoolEndDate}
+            isToDateRequired={true}
           />
         </div>
       </div>

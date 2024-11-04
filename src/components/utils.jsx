@@ -6,9 +6,11 @@ export const InputText = ({
   handler,
   type = "text",
   placeHolder = "",
+  isRequired = true,
 }) => {
   return (
     <label className="labelInput">
+      {isRequired && "*"}
       {labelText}
       {": "}
       <input
@@ -16,6 +18,7 @@ export const InputText = ({
         value={text}
         onChange={handler}
         placeholder={placeHolder}
+        required={isRequired}
       />
     </label>
   );
@@ -41,6 +44,7 @@ export const FromToDateInputs = ({
   handleStartDate,
   endDate,
   handleEndDate,
+  isToDateRequired = false,
 }) => {
   return (
     <div className="dateInputs">
@@ -55,6 +59,7 @@ export const FromToDateInputs = ({
         text={endDate}
         handler={handleEndDate}
         type={"date"}
+        isRequired={isToDateRequired}
       />
     </div>
   );
