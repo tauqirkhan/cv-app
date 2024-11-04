@@ -18,6 +18,7 @@ export default function Section1({
           text={name}
           handler={handleFullName}
           placeHolder={"Your name"}
+          maxLength={15}
         />
         <InputText
           type={"email"}

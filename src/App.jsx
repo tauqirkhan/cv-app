@@ -6,7 +6,6 @@ import Section3 from "./components/Section3";
 import GeneralInfo from "./components/GeneralInfo";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
-// import { toJpeg } from "html-to-image";
 import * as htmlToImage from "html-to-image";
 
 function App() {

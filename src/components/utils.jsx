@@ -7,6 +7,7 @@ export const InputText = ({
   type = "text",
   placeHolder = "",
   isRequired = true,
+  maxLength = 50,
 }) => {
   return (
     <label className="labelInput">
@@ -19,6 +20,7 @@ export const InputText = ({
         onChange={handler}
         placeholder={placeHolder}
         required={isRequired}
+        maxLength={maxLength}
       />
     </label>
   );
