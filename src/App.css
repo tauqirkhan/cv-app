@@ -27,6 +27,11 @@ h2 {
   border-top: 1px solid blue;
   padding: 10px;
 }
+
+.leftSide > :nth-child(1) {
+  border-top: none;
+}
+
 .downloadDiv {
   display: flex;
   justify-content: flex-end;
@@ -41,6 +46,8 @@ h2 {
 
 .downloadBtn:hover {
   cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .rightSide {
